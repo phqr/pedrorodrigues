@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pedro Rodrigues | PH</title>
 </head>
+
 <body>
-    <h1>Oi!</h1>
+    <!-- MENU NO TOPO DA PÁGINA -->
+    <nav>
+        <ul>
+            <li><a href="#" data-paraabrir="home" id="menu_home">Pedro Rodrigues</a></li>
+            <li><a href="#" data-paraabrir="formacao" id="menu_formacao">Formação</a></li>
+            <li><a href="#" data-paraabrir="portifolio" id="menu_portifolio">Projetos</a></li>
+            <li><a href="#" data-paraabrir="contato" id="menu_contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- TELA INICIAL -->
+    <section id="home" class="tela">
+        <h1>Oi 👋</h1>
+        <p>Aqui é o Pedro Rodrigues. Sou do Rio de Janeiro/RJ, tenho 31 anos e estou cursando Análise e Desenvolvimento
+            de Sistemas na Uninter.</p>
+        <p>Sou vascaíno 💢, apaixonado por Fórmula 1 🏎️ e gosto de pedalar nas horas vagas.</p>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section id="formacao" class="tela hide">
+        <h1>Minha formação 💼</h1>
+        <p>Atualmente sou servidor público federal e estou buscando me qualificar como profissional na área de
+            tecnologia.</p>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="portifolio" class="tela hide">
+        <h1>Meu portifolio 💻</h1>
+        <p>Nessa seção apresento todos os projetos desenvolvidos por mim</p>
+        <ul>
+            <li>
+                <a href="http://www.projetotecnologica.infinityfreeapp.com/" target="_blank">
+                    Projeto Tecnológica
+                </a>
+                :<br>Website desenvolvido na disciplina Fundamentos da Programação Web
+                (<a href="https://github.com/phqr/projeto_tecnologica" target="_blank">código fonte</a>)
+            </li>
+        </ul>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="tela hide">
+        <h1>Fala comigo!</h1>
+        <form action="" method="post" id="form">
+            <fieldset>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <textarea rows="4" name="msg" form="form" placeholder="Sua mensagem..." required></textarea>
+                <input type="button" value="Enviar">
+            </fieldset>
+        </form>
+    </section>
 </body>
+
+<script src="index.js"></script>
+
 </html>

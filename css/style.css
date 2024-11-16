@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    --principal: #B4CDED;
+    --principal-escura: #344966;
+    --secundaria: #F0F4EF;
+    --secundaria2: #b4cded4f;
+    --secundaria3: #203c53;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--secundaria2);
+    font-family: "Outfit", sans-serif;
+}
+
+/* 
+MUDA O ESTILO DOS LINKS
+*/
+
+a, a:visited {
+    text-decoration: none;
+    color: var(--principal-escura);
+}
+
+a:hover {
+    color: var(--secundaria2);
+}
+
+/* 
+CONFIGURA O MENU
+*/
+
+nav {
+    background-color: var(--principal);
+    font-size: 18px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: var(--principal-escura);
+    padding: 7px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: var(--principal-escura);
+    color: var(--secundaria);
+}
+
+/* 
+TELAS
+*/
+.hide {
+    display: none;
+}
+
+.tela {
+    margin: auto;
+    padding: 20px;
+    max-width: 600px;
+}
+
+/* 
+FORMULÁRIO
+*/
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+fieldset, input, textarea {
+    border: 1px solid #0000004f;
+    border-radius: 5px;
+}
+
+fieldset div {
+    display: grid;
+}
+
+input {
+    padding: 5px;
+}
+
+input[type='button'] {
+    background-color: var(--principal-escura);
+    color: #fff;
+}
+
+input[type='button']:hover {
+    cursor: pointer;
+    background-color: var(--secundaria3);
+}
